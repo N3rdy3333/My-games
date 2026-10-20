@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mike Ranch 26.2</title>
+</head>
+<body>
+  <script>
+    async function loadAndRun() {
+      const urls = [
+        "https://cdn.jsdelivr.net/gh/N3rdy3333/My-games@main/Monkey-Mart-Unblocked-Full-Screen.html"
+
+      ];
+      let fullHtml = "";
+      for (const u of urls) {
+        const res = await fetch(u);
+        fullHtml += await res.text();
+      }
+
+      document.open();
+      document.write(fullHtml);
+      document.close();
+    }
+
+    loadAndRun();
+  </script>
+
+<script>try{var _n=document.createElement("div");_n.style.cssText="position:fixed;bottom:8px;right:8px;z-index:2147483647;background:rgba(0,0,0,.65);color:#fff;font:11px/1.4 Arial,sans-serif;padding:5px 9px;border-radius:5px;pointer-events:none;max-width:80vw;";_n.textContent="Port by A&O";(document.body||document.documentElement).appendChild(_n);}catch(e){}</script>
+</body>
+</html>
